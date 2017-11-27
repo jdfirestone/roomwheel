@@ -1,3 +1,5 @@
+
+//winwheel required segment and animaiton settings
 var myWheel = new Winwheel({
   numSegments: 8,
   outerRadius: 200,
@@ -15,15 +17,12 @@ var myWheel = new Winwheel({
     type: "spinToStop",
     duration: 5,
     spins: 8,
-
-    // Remember to do something after the animation has finished specify callback function.
     callbackFinished: "logChore()",
-
-    // During the animation need to call the drawTriangle()
-    // to re-draw the pointer each time.
     callbackAfter: "drawTriangle()"
   }
 });
+
+//chore log function
 
 function logChore() {
   var winningSegment = myWheel.getIndicatedSegment();
@@ -35,27 +34,28 @@ function logChore() {
   document.getElementById("myList").appendChild(node);
 }
 
+//counting function I will be using later
 var clicks = 0;
 function mates() {
   clicks += 1;
   document.getElementById("clicks").innerHTML = clicks;
 }
 
-// Call draw triangle to initially draw the pointer.
+//triangle function
+
 drawTriangle();
 
 function drawTriangle() {
-  // Use the same canvas context as the wheel.
   var ctx = myWheel.ctx;
 
-  ctx.strokeStyle = "black"; // Set line colour.
-  ctx.fillStyle = "red"; // Set fill colour.
+  ctx.strokeStyle = "black";
+  ctx.fillStyle = "red";
   ctx.lineWidth = 4;
-  ctx.beginPath(); // Begin path.
-  ctx.moveTo(170, 5); // Move to initial position.
-  ctx.lineTo(230, 5); // Draw lines to make the shape.
+  ctx.beginPath();
+  ctx.moveTo(170, 5);
+  ctx.lineTo(230, 5);
   ctx.lineTo(200, 40);
   ctx.lineTo(171, 5);
-  ctx.stroke(); // Complete the path by stroking (draw lines).
+  ctx.stroke();
   ctx.fill();
 }
