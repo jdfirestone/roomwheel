@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Roommate Chore Wheel</title>
+</head>
+<body>
+  <h1>The Roommate Chore Wheel</h1>
+  <p>Not sure how to decide who should take on which chore every week? Let the wheel decide! </p>
+  <p>Directions: Choose your weekly chore needs under the wheel (coming soon). Then spin the wheel to determine what each roommate got. Press reset before each new turn and keep track of who got which chore with the list under the wheel. Stay tuned, way more features and improvements to come!</p>
+  
+<canvas id="canvas" class="tutCanvas" width="400" height="400">Canvas not supported</canvas>
+
+<td width="50%">
+  <div id="target">
+  <button id='bigButton' class='bigButton' onClick="myWheel.startAnimation(); this.disabled=true;","mates()">Spin the Wheel</button>
+  </div>
+                &nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" onClick="myWheel.stopAnimation(false);
+  myWheel.rotationAngle=0; myWheel.draw(); drawTriangle(); bigButton.disabled=false;">Reset</a>
+
+<ul id="myList">
+</ul>
+  <script src='https://cdn.rawgit.com/zarocknz/javascript-winwheel/2.6/Winwheel.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <script  src="js/script.js"></script>
+
+</body>
+</html>
