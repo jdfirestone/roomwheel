@@ -23,7 +23,6 @@ var myWheel = new Winwheel({
 });
 
 //chore log function
-
 function logChore() {
   var winningSegment = myWheel.getIndicatedSegment();
   var node = document.createElement("LI");
@@ -42,7 +41,6 @@ function mates() {
 }
 
 //triangle function
-
 drawTriangle();
 
 function drawTriangle() {
