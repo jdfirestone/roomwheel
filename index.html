@@ -6,31 +6,53 @@
 </head>
 <body>
   <h1>The Roommate Chore Wheel</h1>
-  <p>Not sure how to decide who should take on which chore every week? Let the wheel decide! </p>
-  <p>Directions: Choose your weekly chore needs under the wheel (coming soon). Then spin the wheel to determine what each roommate got. Press reset before each new turn and keep track of who got which chore with the list under the wheel. Stay tuned, way more features and improvements to come!</p>
+   <p>Not sure how to decide who should take on which chore every week? Let the wheel decide! </p>
+   <p>Directions: Choose your weekly chore needs under the wheel. Then spin the wheel to determine what each roommate got. Press reset before each new turn and keep track of who got which chore with the list under the wheel. Stay tuned, way more features and improvements to come!</p>
 
-<!--winwheel pluged in here-->
-<canvas id="canvas"  width="400" height="400"></canvas>
+ <!--winwheel pluged in here-->
+ <canvas id="canvas"  width="400" height="400"></canvas>
 
 
-<!--id and class's will be used in future, scripts will be moved to js file, still working out minor bugs with the winwheel.js library-->
-<td width="50%">
-  <div id="target">
-  <button id='bigButton' class='bigButton' onClick="myWheel.startAnimation(); this.disabled=true;","mates()">Spin the Wheel</button>
-  </div>
-  &nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" onClick="myWheel.stopAnimation(false);
-  myWheel.rotationAngle=0; myWheel.draw(); drawTriangle(); bigButton.disabled=false;">Reset</a>
+ <!--id and class's will be used in future, scripts will be moved to js file, still working out minor bugs with the winwheel.js library-->
 
-<!--logged chores-->
-<ul id="myList">
-</ul>
+ <div width="50%">
+   <div id="target">
+   <button id='start' class='bigButton'>Spin the Wheel</button>
+   </div>
 
-<!--scripts-->
-  <script src='https://cdn.rawgit.com/zarocknz/javascript-winwheel/2.6/Winwheel.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js'></script>
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+ <button id="reset">Reset for Next Spin</button>
 
-    <script  src="js/script.js"></script>
+
+ <!--logged chores-->
+ <ul id="myList">
+ </ul>
+
+   <!--Segments-->
+   <button id="dishes" class='bigButton'>Dishes</button>
+
+   <button id="floors" class='bigButton'>Floors</button>
+
+    <button id="mail" class='bigButton'>Mail</button>
+
+    <button id="windows" class='bigButton'>Windows</button>
+
+   <button id="bathroom" class='bigButton'>Bathroom</button>
+
+   <button id="kitchen" class='bigButton' onClick="kitchen();">Kitchen</button>
+
+   <button id="porch" class='bigButton'>Porch</button>
+
+  <button id="garbage" class='bigButton'>Garbage</button>
+
+ </br>
+   <button id="delete" class='bigButton'>Remove Last Chore Added</button>
+
+ <!--scripts-->
+   <script src='https://cdn.rawgit.com/zarocknz/javascript-winwheel/2.6/Winwheel.min.js'></script>
+ <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js'></script>
+ <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+ <script  src="js/script.js"></script>
+
 
 </body>
 </html>
