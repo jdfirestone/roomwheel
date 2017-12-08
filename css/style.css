@@ -101,13 +101,13 @@ body {
   #words {
     clear: both;
    text-align: left;
-    margin:0 5%;
+    margin-left: 10%;
     width: 80%;
   }
 
   #canvas
   {
-  margin: 0 3%;
+  margin-left: 5%;
   width: 40%;
   }
 
@@ -120,17 +120,6 @@ body {
 }
 
 @media screen and (max-width: 600px)  {
-  .group {
-    margin: auto;
-  }
-
-  #words {
-    clear: both;
-   text-align: left;
-    margin:0 5%;
-    width: 80%;
-  }
-
   #canvas
   {
   clear: both;
