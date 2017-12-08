@@ -2,57 +2,72 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Roommate Chore Wheel</title>
+  <title>Project </title>
+
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+
 </head>
+
 <body>
-  <h1>The Roommate Chore Wheel</h1>
-   <p>Not sure how to decide who should take on which chore every week? Let the wheel decide! </p>
-   <p>Directions: Choose your weekly chore needs under the wheel. Then spin the wheel to determine what each roommate got. Press reset before each new turn and keep track of who got which chore with the list under the wheel. Stay tuned, way more features and improvements to come!</p>
 
- <!--winwheel pluged in here-->
- <canvas id="canvas"  width="400" height="400"></canvas>
-
-
- <!--id and class's will be used in future, scripts will be moved to js file, still working out minor bugs with the winwheel.js library-->
-
- <div width="50%">
-   <div id="target">
-   <button id='start' class='bigButton'>Spin the Wheel</button>
+ <div id="group">
+ <div id="words">
+<h1>The Roommate Chore Wheel</h1>
+  <p>Not sure how to decide who should take on which chore every week? Let the wheel decide! </p>
+  <p>Directions: Choose your weekly chore needs under the wheel (coming soon). Then spin the wheel to determine what each roommate got. Press reset before each new turn and keep track of who got which chore with the list under the wheel. Stay tuned, way more features and improvements to come!</p>
    </div>
 
- <button id="reset">Reset for Next Spin</button>
+<!--winwheel pluged in here-->
+<canvas id="canvas"  width="400" height="400"></canvas>
 
 
- <!--logged chores-->
- <ul id="myList">
- </ul>
+<!--id and class's will be used in future, scripts will be moved to js file, still working out minor bugs with the winwheel.js library-->
 
-   <!--Segments-->
-   <button id="dishes" class='bigButton'>Dishes</button>
+<div id="button">
+  <div id="target">
+  <button id='start' class='bigButton'>Spin the Wheel</button>
+  </div>
 
-   <button id="floors" class='bigButton'>Floors</button>
+<button id="reset">Reset for Next Spin</button>
 
-    <button id="mail" class='bigButton'>Mail</button>
 
-    <button id="windows" class='bigButton'>Windows</button>
+<!--logged chores-->
+<ul id="myList">
+</ul>
 
-   <button id="bathroom" class='bigButton'>Bathroom</button>
+  <!--Segments-->
+  <button id="dishes" class='bigButton'>Dishes</button>
 
-   <button id="kitchen" class='bigButton' onClick="kitchen();">Kitchen</button>
+  <button id="floors" class='bigButton'>Floors</button>
 
-   <button id="porch" class='bigButton'>Porch</button>
+   <button id="mail" class='bigButton'>Mail</button>
 
-  <button id="garbage" class='bigButton'>Garbage</button>
+   <button id="windows" class='bigButton'>Windows</button>
 
- </br>
-   <button id="delete" class='bigButton'>Remove Last Chore Added</button>
+  <button id="bathroom" class='bigButton'>Bathroom</button>
 
- <!--scripts-->
-<script src='https://cdn.rawgit.com/zarocknz/javascript-winwheel/2.6/Winwheel.min.js'></script>
+  <button id="kitchen" class='bigButton' onClick="kitchen();">Kitchen</button>
+
+  <button id="porch" class='bigButton'>Porch</button>
+
+ <button id="garbage" class='bigButton'>Garbage</button>
+
+</br>
+  <button id="delete" class='bigButton'>Remove Last Chore Added</button>
+     </div>
+
+
+<!--scripts-->
+  <script src='https://cdn.rawgit.com/zarocknz/javascript-winwheel/2.6/Winwheel.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js'></script>
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-<script src="js/script.js"></script>
+<script  src="js/script.js"></script>
 
+    <script  src="js/index.js"></script>
 
 </body>
 </html>

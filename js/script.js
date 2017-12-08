@@ -1,14 +1,13 @@
 
-
 //winwheel required segment and animaiton settings
 var myWheel = new Winwheel({
   numSegments: 4,
   outerRadius: 200,
   segments: [
-    { fillStyle: "aqua", text: "Dishes" },
-    { fillStyle: "lime", text: "Floors" },
-    { fillStyle: "crimson", text: "Mail" },
-    { fillStyle: "yellow", text: "Garbage" }
+    { fillStyle: "#A0A0C0", text: "Dishes" },
+    { fillStyle: "#A3C4BC", text: "Floors" },
+    { fillStyle: "#FFF1A6", text: "Mail" },
+    { fillStyle: "#EEA79C", text: "Garbage" }
   ],
   animation: {
     type: "spinToStop",
@@ -62,28 +61,28 @@ function drawTriangle() {
 document.getElementById("dishes").onclick =
 function dishes()
         {
-            myWheel.addSegment({'text' : "Dishes", 'fillStyle' : 'aqua'}, 1);
+            myWheel.addSegment({'text' : "Dishes", 'fillStyle' : '#A0A0C0'}, 1);
             myWheel.draw();
         }
 
 document.getElementById("floors").onclick =
 function floors()
         {
-            myWheel.addSegment({'text' : "Floors", 'fillStyle' : 'lime'}, 1);
+            myWheel.addSegment({'text' : "Floors", 'fillStyle' : '#A3C4BC'}, 1);
             myWheel.draw();
         }
 
 document.getElementById("mail").onclick =
  function mail()
         {
-            myWheel.addSegment({'text' :  'Mail', 'fillStyle' : 'aqua'}, 1);
+            myWheel.addSegment({'text' :  'Mail', 'fillStyle' : '#FFF1A6'}, 1);
             myWheel.draw();
         }
 
 document.getElementById("windows").onclick =
   function windows()
         {
-            myWheel.addSegment({'text' :  'Windows', 'fillStyle' : 'crimson'}, 1);
+            myWheel.addSegment({'text' :  'Windows', 'fillStyle' : '#A3C4E4'}, 1);
             myWheel.draw();
         }
 
@@ -91,7 +90,7 @@ document.getElementById("windows").onclick =
 document.getElementById("bathroom").onclick =
     function bathroom()
         {
-            myWheel.addSegment({'text' :  'Bathroom', 'fillStyle' : 'yellow'}, 1);
+            myWheel.addSegment({'text' :  'Bathroom', 'fillStyle' : '#CFD2B2'}, 1);
             myWheel.draw();
         }
 
@@ -99,21 +98,21 @@ document.getElementById("bathroom").onclick =
 document.getElementById("kitchen").onclick =
     function kitchen()
         {
-            myWheel.addSegment({'text' :  'Kitchen', 'fillStyle' : 'teal'}, 1);
+            myWheel.addSegment({'text' :  'Kitchen', 'fillStyle' : '#FED766'}, 1);
             myWheel.draw();
         }
 
 document.getElementById("porch").onclick =
     function porch()
         {
-            myWheel.addSegment({'text' :  'Porch', 'fillStyle' : 'red'}, 1);
+            myWheel.addSegment({'text' :  'Porch', 'fillStyle' : '#2AB7CA'}, 1);
             myWheel.draw();
         }
 
 document.getElementById("garbage").onclick =
     function garbage()
         {
-            myWheel.addSegment({'text' :  'Garbage', 'fillStyle' : 'purple'}, 1);
+            myWheel.addSegment({'text' :  'Garbage', 'fillStyle' : '#EEA79C'}, 1);
             myWheel.draw();
         }
 

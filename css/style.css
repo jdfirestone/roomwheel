@@ -1,0 +1,149 @@
+
+body {
+  background: #fff;
+  color: #000;
+  font-family: "Avenir", sans-serif;
+  padding: 2% ;
+}
+
+#group {
+  display: table;
+  clear: both;
+  max-width: 100%;
+  margin-top: 3%;
+}
+
+#canvas {
+  float:left;
+  width: 28%;
+  margin-left: 5%;
+}
+
+#words
+{
+ float:left;
+ width: 30%;
+}
+
+#button
+{
+ float:left;
+ width: 30%;
+ margin-top: 5%;
+ margin-left: 5%;
+
+}
+
+.bigButton
+{
+ margin: 1%;
+}
+
+/*Button Colors*/
+#dishes
+{
+  color: black;
+  background-color: #A0A0C0;
+}
+
+#floors
+{
+  color: black;
+  background-color: #A3C4BC;
+}
+
+
+#mail
+{
+  color: black;
+  background-color: #FFF1A6;
+}
+
+#windows
+{
+  color: black;
+  background-color: #A3C4E4;
+}
+
+#bathroom
+{
+  color: black;
+  background-color: #CFD2B2;
+}
+
+#kitchen
+{
+  color: black;
+  background-color: #FED766;
+}
+
+
+#porch
+{
+  color: black;
+  background-color: #2AB7CA;
+}
+
+#garbage
+{
+  color: black;
+  background-color: #EEA79C;
+}
+
+
+
+
+@media screen and (max-width: 1000px)  {
+  .group {
+    margin: auto;
+  }
+
+  #words {
+    clear: both;
+   text-align: left;
+    margin:0 5%;
+    width: 80%;
+  }
+
+  #canvas
+  {
+    magin: 0 3%;
+  width: 40%;
+  }
+
+  #button{
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 2%;
+  }
+
+}
+
+@media screen and (max-width: 500px)  {
+  .group {
+    margin: auto;
+  }
+
+  #words {
+    clear: both;
+   text-align: left;
+    margin:0 5%;
+    width: 80%;
+  }
+
+  #canvas
+  {
+    ma
+  clear: both;
+  width: 90%;
+    margin-bottom: 10%
+  }
+
+  #button{
+    clear: both;
+    width: 90%;
+    margin-top: 2%;
+    margin-bottom: 10%
+  }
+
+}
