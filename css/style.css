@@ -3,7 +3,7 @@ body {
   background: #fff;
   color: #000;
   font-family: "Avenir", sans-serif;
-  padding: 2% ;
+  padding: 2%;
 }
 
 #group {
@@ -107,7 +107,7 @@ body {
 
   #canvas
   {
-    magin: 0 3%;
+  margin: 0 3%;
   width: 40%;
   }
 
@@ -133,17 +133,16 @@ body {
 
   #canvas
   {
-    ma
   clear: both;
   width: 90%;
-    margin-bottom: 10%
+    margin-bottom: 10%;
   }
 
   #button{
     clear: both;
     width: 90%;
     margin-top: 2%;
-    margin-bottom: 10%
+    margin-bottom: 10%;
   }
 
 }
